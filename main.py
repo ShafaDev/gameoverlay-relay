@@ -17,7 +17,7 @@ socketio = SocketIO(
     app, 
     cors_allowed_origins="*",
     ping_timeout=60,
-    ping_interval=25,
+    ping_interval=25
 )
 
 # Store active rooms
