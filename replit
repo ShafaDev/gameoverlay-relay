@@ -1,7 +1,0 @@
-run = "gunicorn --worker-class eventlet -w 1 --bind 0.0.0.0:$PORT main:app"
-language = "python3"
-modules = ["python-3.11"]
-
-[deployment]
-run = ["sh", "-c", "gunicorn --worker-class eventlet -w 1 --bind 0.0.0.0:$PORT main:app"]
-deploymentTarget = "autoscale"
